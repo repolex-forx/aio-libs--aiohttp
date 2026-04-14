@@ -1,0 +1,100 @@
+[2026-04-14T05:56:47Z] === ENRICH ITERATION 1 START | repo=aio-libs/aiohttp sha=0ed22240 ===
+[2026-04-14T05:56:47Z] [iter=1] PHASE START: enrich repo=aio-libs/aiohttp sha=0ed22240 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0ed22240-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0ed22240769d11dc382ca1430538f8be180316df.nq.gz
+[2026-04-14T05:56:47Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-14T05:57:05Z] [iter=1] AST store loaded triples=2331290 load_secs=17 mem_mb=878 MB
+[2026-04-14T05:57:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=878 MB
+[2026-04-14T05:57:09Z] [iter=1] LSP targets found call_sites=18175 imports=918 extends=222 implements=0 secs=4
+[2026-04-14T05:57:12Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=878 MB
+[2026-04-14T05:57:26Z] [iter=1] Position index built positions=154338 nodes_with_types=200181 secs=15 mem_mb=878 MB
+[2026-04-14T05:57:26Z] [iter=1] Step 3: Starting LSP resolution mem_mb=878 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T05:57:26Z] [iter=1] Resolving target type target_type=call_site count=18175
+[2026-04-14T05:57:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=tests/test_proxy_functional.py
+[2026-04-14T05:59:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=1 resolved=52 errors=147 current=aiohttp/web_request.py
+[2026-04-14T06:00:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=2 resolved=119 errors=222 current=tests/test_http_exceptions.py
+[2026-04-14T06:19:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=4 resolved=258 errors=1443 current=tests/test_web_response.py
+[2026-04-14T06:24:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=5 resolved=324 errors=1731 current=tests/test_web_functional.py
+[2026-04-14T06:35:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.2 files_done=6 resolved=401 errors=2485 current=tests/test_test_utils.py
+[2026-04-14T06:37:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=7 resolved=418 errors=2579 current=tests/test_web_websocket_functional.py
+[2026-04-14T06:42:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.2 files_done=8 resolved=425 errors=2939 current=tests/autobahn/server.py
+[2026-04-14T06:43:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.2 files_done=10 resolved=440 errors=3003 current=tests/test_web_sendfile_functional.py
+[2026-04-14T06:48:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.4 files_done=11 resolved=491 errors=3278 current=tests/test_connector.py
+[2026-04-14T06:59:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.2 files_done=12 resolved=767 errors=4037 current=examples/server_simple.py
+[2026-04-14T07:00:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.0 files_done=14 resolved=805 errors=4090 current=tests/test_client_response.py
+[2026-04-14T07:03:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.9 files_done=15 resolved=1063 errors=4277 current=tests/test_cookiejar.py
+[2026-04-14T07:06:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.6 files_done=16 resolved=1163 errors=4448 current=examples/fake_server.py
+[2026-04-14T07:09:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=18 resolved=1230 errors=4647 current=tests/test_multipart_helpers.py
+[2026-04-14T07:11:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.3 files_done=19 resolved=1230 errors=4751 current=tests/test_client_exceptions.py
+[2026-04-14T07:15:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.4 files_done=21 resolved=1406 errors=5018 current=tests/test_websocket_writer.py
+[2026-04-14T07:15:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.0 files_done=22 resolved=1409 errors=5057 current=tests/test_web_app.py
+[2026-04-14T07:18:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.3 files_done=23 resolved=1438 errors=5203 current=tests/test_urldispatch.py
+[2026-04-14T07:24:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.2 files_done=24 resolved=1562 errors=5653 current=aiohttp/web_runner.py
+[2026-04-14T07:25:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.8 files_done=25 resolved=1611 errors=5688 current=aiohttp/web.py
+[2026-04-14T07:26:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.6 files_done=26 resolved=1629 errors=5740 current=tests/test_client_session.py
+[2026-04-14T07:28:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=27 resolved=1714 errors=5885 current=tests/test_websocket_parser.py
+[2026-04-14T07:30:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.6 files_done=28 resolved=1768 errors=6000 current=tests/test_streams.py
+[2026-04-14T07:38:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.8 files_done=29 resolved=1903 errors=6530 current=tests/test_web_sendfile.py
+[2026-04-14T07:39:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.9 files_done=31 resolved=1943 errors=6604 current=aiohttp/streams.py
+[2026-04-14T07:40:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.0 files_done=32 resolved=1973 errors=6672 current=aiohttp/hdrs.py
+[2026-04-14T07:43:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.8 files_done=34 resolved=2132 errors=6850 current=tests/test_route_def.py
+[2026-04-14T07:45:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.3 files_done=35 resolved=2190 errors=6951 current=aiohttp/formdata.py
+[2026-04-14T07:46:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.2 files_done=37 resolved=2232 errors=7009 current=tests/test_web_request.py
+[2026-04-14T07:48:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.5 files_done=38 resolved=2334 errors=7158 current=tests/test_frozenlist.py
+[2026-04-14T07:49:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.6 files_done=39 resolved=2348 errors=7228 current=aiohttp/multipart.py
+[2026-04-14T07:52:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.5 files_done=40 resolved=2444 errors=7414 current=aiohttp/web_urldispatcher.py
+[2026-04-14T07:54:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.8 files_done=41 resolved=2579 errors=7564 current=tests/test_signals.py
+[2026-04-14T07:55:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.6 files_done=42 resolved=2599 errors=7613 current=tests/test_web_protocol.py
+[2026-04-14T07:57:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.9 files_done=43 resolved=2700 errors=7764 current=tests/test_tracing.py
+[2026-04-14T07:59:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.5 files_done=45 resolved=2784 errors=7869 current=tests/test_client_request.py
+[2026-04-14T08:03:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.1 files_done=46 resolved=2890 errors=8169 current=aiohttp/client_reqrep.py
+[2026-04-14T08:06:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.6 files_done=47 resolved=2977 errors=8328 current=setup.py
+[2026-04-14T08:07:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.6 files_done=49 resolved=3038 errors=8390 current=tests/test_http_writer.py
+[2026-04-14T08:08:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.6 files_done=50 resolved=3055 errors=8457 current=aiohttp/helpers.py
+[2026-04-14T08:09:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.8 files_done=51 resolved=3181 errors=8536 current=tests/test_web_urldispatcher.py
+[2026-04-14T08:11:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.7 files_done=52 resolved=3208 errors=8659 current=aiohttp/payload.py
+[2026-04-14T08:12:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.5 files_done=53 resolved=3244 errors=8712 current=aiohttp/client_ws.py
+[2026-04-14T08:13:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.3 files_done=54 resolved=3257 errors=8758 current=tests/test_multipart.py
+[2026-04-14T08:18:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.1 files_done=55 resolved=3350 errors=9136 current=aiohttp/web_response.py
+[2026-04-14T08:19:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.8 files_done=56 resolved=3436 errors=9183 current=tests/test_web_log.py
+[2026-04-14T08:20:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.5 files_done=57 resolved=3457 errors=9230 current=aiohttp/web_ws.py
+[2026-04-14T08:21:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.7 files_done=58 resolved=3497 errors=9306 current=tests/test_flowcontrol_streams.py
+[2026-04-14T08:22:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.5 files_done=60 resolved=3521 errors=9354 current=aiohttp/client.py
+[2026-04-14T08:24:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.5 files_done=61 resolved=3575 errors=9483 current=examples/client_json.py
+[2026-04-14T08:26:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.6 files_done=63 resolved=3624 errors=9622 current=tests/test_resolver.py
+[2026-04-14T08:27:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.3 files_done=64 resolved=3644 errors=9665 current=tests/test_client_ws_functional.py
+[2026-04-14T08:33:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=156.6 files_done=65 resolved=3668 errors=10069 current=aiohttp/cookiejar.py
+[2026-04-14T08:34:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.4 files_done=66 resolved=3709 errors=10120 current=aiohttp/locks.py
+[2026-04-14T08:36:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.2 files_done=68 resolved=3788 errors=10300 current=tests/conftest.py
+[2026-04-14T08:38:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.6 files_done=71 resolved=3862 errors=10389 current=aiohttp/worker.py
+[2026-04-14T08:38:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.1 files_done=72 resolved=3888 errors=10425 current=tests/test_locks.py
+[2026-04-14T08:41:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.2 files_done=74 resolved=3943 errors=10561 current=aiohttp/test_utils.py
+[2026-04-14T08:42:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.8 files_done=75 resolved=3982 errors=10664 current=aiohttp/web_protocol.py
+[2026-04-14T08:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=167.5 files_done=76 resolved=4006 errors=10772 current=tests/test_client_ws.py
+[2026-04-14T08:46:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=169.8 files_done=77 resolved=4119 errors=10917 current=aiohttp/http_writer.py
+[2026-04-14T08:48:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.5 files_done=79 resolved=4140 errors=11026 current=tests/test_classbasedview.py
+[2026-04-14T08:49:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=172.6 files_done=82 resolved=4164 errors=11099 current=tests/test_formdata.py
+[2026-04-14T08:50:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=173.6 files_done=84 resolved=4200 errors=11166 current=tests/autobahn/client.py
+[2026-04-14T08:51:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.0 files_done=86 resolved=4212 errors=11254 current=tests/test_worker.py
+[2026-04-14T08:52:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.6 files_done=87 resolved=4245 errors=11297 current=aiohttp/pytest_plugin.py
+[2026-04-14T08:53:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=176.6 files_done=88 resolved=4270 errors=11357 current=tests/test_pytest_plugin.py
+[2026-04-14T08:53:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=177.1 files_done=90 resolved=4278 errors=11391 current=aiohttp/web_exceptions.py
+[2026-04-14T08:54:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=177.8 files_done=93 resolved=4344 errors=11434 current=examples/web_srv_route_table.py
+[2026-04-14T08:55:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=178.9 files_done=95 resolved=4381 errors=11511 current=examples/legacy/srv.py
+[2026-04-14T08:56:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=179.7 files_done=96 resolved=4409 errors=11561 current=tests/test_web_websocket.py
+[2026-04-14T08:59:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=182.3 files_done=97 resolved=4425 errors=11726 current=aiohttp/resolver.py
+[2026-04-14T09:00:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.3 files_done=100 resolved=4458 errors=11795 current=examples/client_ws.py
+[2026-04-14T09:00:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=184.1 files_done=104 resolved=4500 errors=11848 current=tests/test_web_request_handler.py
+[2026-04-14T09:01:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=185.2 files_done=107 resolved=4521 errors=11913 current=tests/test_client_connection.py
+[2026-04-14T09:03:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=186.6 files_done=109 resolved=4540 errors=12000 current=aiohttp/tcp_helpers.py
+[2026-04-14T09:03:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.2 files_done=113 resolved=4561 errors=12037 current=tests/test_tcp_helpers.py
+[2026-04-14T09:04:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.7 files_done=116 resolved=4594 errors=12071 current=examples/web_classview.py
+[2026-04-14T09:05:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=188.3 files_done=120 resolved=4610 errors=12109 current=aiohttp/http.py
+[2026-04-14T09:05:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=188.9 files_done=128 resolved=4660 errors=12148 current=examples/lowlevel_srv.py
+[2026-04-14T09:14:13Z] [iter=1] Target type resolved target_type=call_site resolved=4666 errors=12701 secs=11807 mem_mb=878 MB
+[2026-04-14T09:14:13Z] [iter=1] Resolving target type target_type=import_statement count=918
+[2026-04-14T09:14:14Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=197.5 files_done=0 resolved=0 errors=0 current=tests/test_web_response.py
+[2026-04-14T09:14:22Z] [iter=1] Target type resolved target_type=import_statement resolved=842 errors=0 secs=8 mem_mb=878 MB
+[2026-04-14T09:14:22Z] [iter=1] Resolving target type target_type=extends_clause count=222
+[2026-04-14T09:14:24Z] [iter=1] Target type resolved target_type=extends_clause resolved=220 errors=0 secs=3 mem_mb=878 MB
+[2026-04-14T09:14:37Z] [iter=1] Step 5: Writing final enrichment file triples=159725
+[2026-04-14T09:14:40Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0ed22240769d11dc382ca1430538f8be180316df.nq.gz size_kb=3320
+[2026-04-14T09:14:40Z] [iter=1] PHASE END: enrich elapsed_s=11873 elapsed_min=197.9 total_triples=159725
